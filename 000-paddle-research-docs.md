@@ -1,4 +1,4 @@
-# 3. 
+# 3. Handle using a customized success page
 
 Date: 2025-02-18 
 
