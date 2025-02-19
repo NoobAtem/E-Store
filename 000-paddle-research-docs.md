@@ -48,13 +48,13 @@ By having to developed additional web page for Rikai AI, it will introduce addit
 ## Considered Options
 
 - **Default Paddle Success Page:** Notifies the customer of their transaction via page and email of their order details.
-- **Customized Success Page:** Redirects the customer after successful transaction to whatever data-success-url is set in HTML or the 'Paddle.Checkout.open()' attribute called 'successUrl' has been setted. It can also be configured during initialization step through process of 'eventCallback'.
+- **Customized Success Page:** Redirects the customer after successful transaction to whatever data-success-url is set in HTML or the `Paddle.Checkout.open()` attribute called `successUrl` has been setted. It can also be configured during initialization step through process of `eventCallback`.
 - **Email Confirmation:** Using email as source of confirmation while having the option of using Webhooks for additional control during email phase. This process skips the success page entirely.
 - **Customized Success Workflow:** Maximizing control over the process using Webhooks to automate the post-purchase results like, sending API keys, the emailing of order details, and can add additional processes.
 
 ## Decision Outcome
 
-Chosen option: .
+We chose `Customized Success Page`because it allows us to have the flexible choice of displaying contents that we want for the customer while openning the door for more complex designs. While the default option maybe capable enought to display the contents that we want, if it so happends that we require more sophisticated design. With the `Customized Success Page`, changes would be least out of the other option.
 
 ## Pros and Cons of the Options
 
